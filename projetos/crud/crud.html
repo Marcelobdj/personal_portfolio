@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de CLientes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="crud-style.css">
+</head>
+<body>
+    <div class="masterContainer">
+        <div class="container margin-bottom text-center">
+            <header class="text-center">
+                <h1>Banco de dados de Clientes</h1>
+            </header>
+            <button type="button" class="btn btn-primary" id="addBtn">Adicionar Cliente</button>
+        </div>
+        <div class="container window p-3 mb-2 bg-dark text-white hidden" id="newCosWindow">
+            <div class="window-content">
+                <header class="window-header">
+                    <h2>Novo Cliente</h2>
+                </header>
+                <form class="window-form form-group" id="form">
+                    <label for="nameInput">Nome</label>
+                    <input type="text" class="window-field" id="nameInput" data-index='new' required>
+                    <label for="emailInput">E-mail</label>
+                    <input type="email" class="window-field" id="emailInput" required>
+                    <label for="phoneInput">Telefone</label>
+                    <input type="tel" class="window-field" id="phoneInput" required>
+                    <label for="cityInput">Cidade</label>
+                    <input type="text" class="window-field" id="cityInput" required>
+                </form>
+                <footer class="window-footer">
+                    <button class="btn btn-success" id="saveBtn">Salvar</button>
+                    <button class="btn btn btn-danger" id="cancelBtn">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+        <main class="margin-top">
+            <table id="table" class="container margin-auto">
+                <thead class="p-3 mb-2 bg-primary text-white titleWidth">
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Celular</th>
+                        <th>Cidade</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody class="p-3 mb-2 bg-light text-dark titleWidth">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="crud.js"></script>
+    
+</body>
+</html>

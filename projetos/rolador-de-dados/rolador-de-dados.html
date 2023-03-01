@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mdj_Rolador de Dados</title>
+    <link rel="stylesheet" href="../../CSS/base-background.css">
+    <link rel="stylesheet" href="../../CSS/base-formating.css">
+    <link rel="stylesheet" href="../../CSS/menu.css">
+    <link rel="stylesheet" href="CSS/rolador-de-dados.css">
+</head>
+<body>
+    <div class="backgroundImg"></div>
+
+    <header>
+        <nav>
+            <h1><a href="../../index.html">Mdj<span class="dotdotting">_</a></span></h1>
+            <ul>
+                <li><a href="../../sobre.html">Sobre</a></li>
+                <li class="selected"><a href="../../projetos.html">Projetos</a></li>
+                <li><a href="../../contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Rolador de dados para Dungeons & Dragons</h1>
+        <p>1) Escolha o dado a ser rolado através do selecionador (só é permitido 1 dado por vez)</p>
+        <p>2) Escolha a quantidade a ser rolada do dado selecionado (o valor mínimo é 1)</p>
+        <p>3) Clique no botão "Rolar!" para visualizar o resultado.</p>
+        <p>4) Clique no botão "Limpar" para remover o resultado da tela.</p>
+
+    </section>
+
+    <div class="diceContainerMain">
+        <div>
+            <label class="labelDice" for="d4">d4</label>
+            <input type="radio" name="diceRadio" id="d4">
+        </div>
+        <div>
+            <label class="labelDice" for="d6">d6</label>
+            <input type="radio" name="diceRadio" id="d6">
+        </div>
+        <div>
+            <label class="labelDice" for="d6">d8</label>
+            <input type="radio" name="diceRadio" id="d8">
+        </div>
+        <div>
+            <label class="labelDice" for="d10">d10</label>
+            <input type="radio" name="diceRadio" id="d10">
+        </div>
+        <div>
+            <label class="labelDice" for="d12">d12</label>
+            <input type="radio" name="diceRadio" id="d12">
+        </div>
+        <div>
+            <label class="labelDice" for="d20">d20</label>
+            <input type="radio" name="diceRadio" id="d20">
+        </div>
+    </div>
+
+    <div class="diceContainer">
+        <label for="diceQntd">Selecione a quantidade:</label>
+        <input type="number" name="diceQntd" id="diceQntd" required>
+    </div>
+
+    <div class="diceContainer">
+    <input class="rollButton" type="button" value="Rolar!" id="rollButton">
+    </div>
+
+    <div class="diceResults">
+        <h2>Resultados</h2>
+        <div class="diceContainerLeft" id="diceContainer">
+        </div>
+    </div>
+
+    <div class="diceContainer">
+        <input class="rollButton" type="button" value="Limpar" id="clearButton">
+        </div>
+
+    <footer>
+        <p>Site desenvolvido por &copy;Mdj_2022</p>
+    </footer>
+
+    <script src="JS/diceRoll.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Play&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* RESET NOS ESPAÇAMENTOS */
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    border: orangered 1px solid;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.objectProfile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.sectionContainer{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.sectionContainer div{
+    margin: auto;
+    margin-top: 2%;
+    width: 100%;
+    border: orangered 1px solid;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.orange{
+    color: orangered;
+}
+
+h1 {
+    color: orangered;
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+h2{
+    color: orangered;
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h2 span{
+    color: rgb(0, 0, 0);
+    background-color: orangered;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+img{
+    max-width: 100%
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.smaller{
+    font-size: 14px;
+}
+
+.clickForMore{
+    font-size: 14px;
+}
+
+.hidden{
+    display: none;
+}
+
+.clickForMore:hover{
+    cursor: pointer;
+}
+
+footer{
+    margin-top: 5%;
+    text-align: center;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+footer p{
+    position: relative;
+    top: 30%;
+    font-style: italic;
+    color: orangered;
+    font-family: 'Play', sans-serif;
+}

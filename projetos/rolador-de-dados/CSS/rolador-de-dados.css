@@ -1,0 +1,99 @@
+.diceContainer{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diceContainerMain{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.diceContainerLeft{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.diceContainer div{
+    margin: auto;
+    margin-top: 2%;
+    width: 75px;
+    height: 75px;
+    border: orangered 1px solid;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diceContainerLeft div{
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: orangered 1px solid;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.322);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label{
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.labelDice{
+    color: orangered;
+    font-family: 'Play', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+.diceResults{
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.rollButton{
+	box-shadow:inset 0px 39px 0px -24px rgb(255, 97, 40);
+	background-color: orangered;
+	border-radius:4px;
+	border:1px solid rgb(126, 34, 0);
+	display:inline-block;
+	cursor:pointer;
+	color:whitesmoke;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px rgb(126, 34, 0);
+}
+.rollButton:hover{
+	background-color:rgb(255, 97, 40);
+}
+.rollButton:active{
+	position:relative;
+	top:1px;
+}
